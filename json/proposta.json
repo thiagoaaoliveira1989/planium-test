@@ -1,1 +1,64 @@
-[{"Plano Escolhido":"reg1","Nome":"Thiago","Idade":"32","Valor do Plano":11},{"Plano Escolhido":"reg1","Nome":"Ana Victoria","Idade":"45","Valor do Plano":14},{"Plano Escolhido":"reg1","Nome":"Carina","Idade":"42","Valor do Plano":14},{"Plano Escolhido":"reg1","Nome":"Bruno","Idade":"32","Valor do Plano":11},{"Plano Escolhido":"reg6","Nome":"Iara","Idade":"50","Valor do Plano":75},{"Plano Escolhido":"reg6","Nome":"Quintina","Idade":"90","Valor do Plano":75},{"Plano Escolhido":"reg2","Nome":"Marcos","Idade":"50","Valor do Plano":40},{"Plano Escolhido":"reg3","Nome":"Catia","Idade":"40","Valor do Plano":40},{"Plano Escolhido":"reg4","Nome":"Pedro","Idade":"30","Valor do Plano":50},{"Plano Escolhido":"reg5","Nome":"Bruno","Idade":"1","Valor do Plano":50},{"Valor Total":380}]
+[{
+        "Plano Escolhido": "reg1",
+        "Nome": "Thiago",
+        "Idade": 32,
+        "Valor do Plano": 11
+    },
+    {
+        "Plano Escolhido": "reg1",
+        "Nome": "Ana Victoria",
+        "Idade": 45,
+        "Valor do Plano": 14
+    },
+    {
+        "Plano Escolhido": "reg1",
+        "Nome": "Carina",
+        "Idade": 42,
+        "Valor do Plano": 14
+    },
+    {
+        "Plano Escolhido": "reg1",
+        "Nome": "Bruno",
+        "Idade": 32,
+        "Valor do Plano": 11
+    },
+    {
+        "Plano Escolhido": "reg6",
+        "Nome": "Iara",
+        "Idade": 50,
+        "Valor do Plano": 75
+    },
+    {
+        "Plano Escolhido": "reg6",
+        "Nome": "Quintina",
+        "Idade": 90,
+        "Valor do Plano": 75
+    },
+    {
+        "Plano Escolhido": "reg2",
+        "Nome": "Marcos",
+        "Idade": 50,
+        "Valor do Plano": 40
+    },
+    {
+        "Plano Escolhido": "reg3",
+        "Nome": "Catia",
+        "Idade": 40,
+        "Valor do Plano": 40
+    },
+    {
+        "Plano Escolhido": "reg4",
+        "Nome": "Pedro",
+        "Idade": 30,
+        "Valor do Plano": 50
+    },
+    {
+        "Plano Escolhido": "reg5",
+        "Nome": "Bruno",
+        "Idade": 1,
+        "Valor do Plano": 50
+    },
+    {
+        "Valor Total": 380
+    }
+]
