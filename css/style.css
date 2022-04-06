@@ -1,0 +1,15 @@
+    select {
+        display: list-item;
+    }
+    
+    .input-field>label {
+        position: relative;
+    }
+    
+    .input-center {
+        display: flex;
+    }
+    
+    input[type="submit"] {
+        color: white;
+    }
