@@ -82,20 +82,20 @@ foreach($data as $row){
     /*
     *verificando o plano escolhido, e o minimo de vidas de correspondente a cada plano, e assim calculando o valor de cada plano.
     */
-    if(($row['Plano Escolhido'] == 'reg1') && ($tot_benef = $data_prices[0]->minimo_vidas)){
+    if(($row['Plano Escolhido'] == 'reg1') && ($tot_benef == $data_prices[0]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:
              $valordoplano =  $data_prices[0]->faixa1;
              echo "<td>".$valordoplano."</td>";
              break;
-             case ($row['Idade'] >= 18) && ($row['Idade'] < 40):
+             case ($row['Idade'] >= 18) && ($row['Idade'] <= 40):
              $valordoplano =  $data_prices[0]->faixa2;
              echo "<td>".$valordoplano."</td>";
              break;  
              case ($row['Idade'] > 40):
              $valordoplano =  $data_prices[0]->faixa3;
-             echo "<td>".$valordoplano."</td></tr></table>";
+             echo "<td>".$valordoplano."</td></tr>";
              break; 
         }  
 
@@ -105,13 +105,13 @@ foreach($data as $row){
              $valordoplano =  $data_prices[1]->faixa1;
              echo "<td>".$valordoplano."</td>";
              break;
-             case ($row['Idade'] >= 18) && ($row['Idade'] < 40):
+             case ($row['Idade'] >= 18) && ($row['Idade'] <= 40):
              $valordoplano =  $data_prices[1]->faixa2;
              echo "<td>".$valordoplano."</td>";
              break;  
              case ($row['Idade'] > 40):
              $valordoplano =  $data_prices[1]->faixa3;
-             echo "<td>".$valordoplano."</td></tr></table>";
+             echo "<td>".$valordoplano."</td></tr>";
              break; 
         }  
     }elseif(($row['Plano Escolhido'] == 'reg2') && ($tot_benef >= $data_prices[2]->minimo_vidas)){
@@ -121,13 +121,13 @@ foreach($data as $row){
              $valordoplano =  $data_prices[2]->faixa1;
              echo "<td>".$valordoplano."</td>";
              break;
-             case ($row['Idade'] >= 18) && ($row['Idade'] < 40):
+             case ($row['Idade'] >= 18) && ($row['Idade'] <= 40):
              $valordoplano =  $data_prices[2]->faixa2;
              echo "<td>".$valordoplano."</td>";
              break;  
              case ($row['Idade'] > 40):
              $valordoplano =  $data_prices[2]->faixa3;
-             echo "<td>".$valordoplano."</td></tr></table>";
+             echo "<td>".$valordoplano."</td></tr>";
              break; 
         }  
 
@@ -138,13 +138,13 @@ foreach($data as $row){
              $valordoplano =  $data_prices[3]->faixa1;
              echo "<td>".$valordoplano."</td>";
              break;
-             case ($row['Idade'] >= 18) && ($row['Idade'] < 40):
+             case ($row['Idade'] >= 18) && ($row['Idade'] <= 40):
              $valordoplano =  $data_prices[3]->faixa2;
              echo "<td>".$valordoplano."</td>";
              break;  
              case ($row['Idade'] > 40):
              $valordoplano =  $data_prices[3]->faixa3;
-             echo "<td>".$valordoplano."</td></tr></table>";
+             echo "<td>".$valordoplano."</td></tr>";
              break; 
         }  
     }elseif(($row['Plano Escolhido'] == 'reg4') && ($tot_benef >= $data_prices[4]->minimo_vidas)){
@@ -154,13 +154,13 @@ foreach($data as $row){
              $valordoplano =  $data_prices[4]->faixa1;
              echo "<td>".$valordoplano."</td>";
              break;
-             case ($row['Idade'] >= 18) && ($row['Idade'] < 40):
+             case ($row['Idade'] >= 18) && ($row['Idade'] <= 40):
              $valordoplano =  $data_prices[4]->faixa2;
              echo "<td>".$valordoplano."</td>";
              break;  
              case ($row['Idade'] > 40):
              $valordoplano =  $data_prices[4]->faixa3;
-             echo "<td>".$valordoplano."</td></tr></table>";
+             echo "<td>".$valordoplano."</td></tr>";
              break; 
         }  
     }elseif(($row['Plano Escolhido'] == 'reg5') && ($tot_benef >= $data_prices[5]->minimo_vidas)){
@@ -170,29 +170,29 @@ foreach($data as $row){
              $valordoplano =  $data_prices[5]->faixa1;
              echo "<td>".$valordoplano."</td>";
              break;
-             case ($row['Idade'] >= 18) && ($row['Idade'] < 40):
+             case ($row['Idade'] >= 18) && ($row['Idade'] <= 40):
              $valordoplano =  $data_prices[5]->faixa2;
              echo "<td>".$valordoplano."</td>";
              break;  
              case ($row['Idade'] > 40):
              $valordoplano =  $data_prices[5]->faixa3;
-             echo "<td>".$valordoplano."</td></tr></table>";
+             echo "<td>".$valordoplano."</td></tr>";
              break; 
         }  
-    }elseif(($row['Plano Escolhido'] == 'reg6') && ($tot_benef = $data_prices[6]->minimo_vidas)){
+    }elseif(($row['Plano Escolhido'] == 'reg6') && ($tot_benef == $data_prices[6]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:
              $valordoplano =  $data_prices[6]->faixa1;
              echo "<td>".$valordoplano."</td>";
              break;
-             case ($row['Idade'] >= 18) && ($row['Idade'] < 40):
+             case ($row['Idade'] >= 18) && ($row['Idade'] <= 40):
              $valordoplano =  $data_prices[6]->faixa2;
              echo "<td>".$valordoplano."</td>";
              break;  
              case ($row['Idade'] > 40):
              $valordoplano =  $data_prices[6]->faixa3;
-             echo "<td>".$valordoplano."</td></tr></table>";
+             echo "<td>".$valordoplano."</td></tr>";
              break; 
         }  
     }elseif(($row['Plano Escolhido'] == 'reg6') && ($tot_benef >= $data_prices[7]->minimo_vidas)){
@@ -202,13 +202,13 @@ foreach($data as $row){
              $valordoplano =  $data_prices[7]->faixa1;
              echo "<td>".$valordoplano."</td>";
              break;
-             case ($row['Idade'] >= 18) && ($row['Idade'] < 40):
+             case ($row['Idade'] >= 18) && ($row['Idade'] <= 40):
              $valordoplano =  $data_prices[7]->faixa2;
              echo "<td>".$valordoplano."</td>";
              break;  
              case ($row['Idade'] > 40):
              $valordoplano =  $data_prices[7]->faixa3;
-             echo "<td>".$valordoplano."</td></tr></table>";
+             echo "<td>".$valordoplano."</td></tr>";
              break; 
         }  
     }                    
@@ -227,7 +227,8 @@ foreach($data as $row){
     
    
 }
-echo "<table class='striped'>
+
+echo "<br><br><table class='striped'>
             <tr>
                 <th>Total do Plano:</th>
                 <th>R$ $tot_plano,00</th>
