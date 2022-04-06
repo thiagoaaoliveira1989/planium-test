@@ -3,13 +3,13 @@ require_once 'convertFromPlans.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planium</title>
+    <title>Orçamento - Planium</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -27,7 +27,7 @@ require_once 'convertFromPlans.php';
         </div>
     </nav>
 
-    <h3 class="center">Orçamento</h3>
+    
 <?php
 require_once 'convertFromPrices.php';
 require_once 'convertFromPlans.php';
@@ -60,6 +60,7 @@ $idades= $_POST['idades'];
 
 ?>
 <div class="container">
+<h3 class="titulo center">Orçamento</h3>
 <table border="1" class='striped'>
     <tr>
         <th>Plano</th>
@@ -82,7 +83,7 @@ foreach($data as $row){
     /*
     *verificando o plano escolhido, e o minimo de vidas de correspondente a cada plano, e assim calculando o valor de cada plano.
     */
-    if(($row['Plano Escolhido'] == 'reg1') && ($tot_benef == $data_prices[0]->minimo_vidas)){
+    if(($row['Plano Escolhido'] == 'reg1') && ($tot_benef < $data_prices[1]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:

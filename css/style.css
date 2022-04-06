@@ -13,3 +13,28 @@
     input[type="submit"] {
         color: white;
     }
+    
+    .container {
+        background-color: rgba(197, 196, 196, 0.6);
+    }
+    
+    .titulo {
+        padding-top: 20px;
+    }
+    
+    .input-field>label {
+        color: black;
+    }
+    
+    th {
+        font-size: 1.1rem;
+    }
+    
+    input {
+        text-align: center;
+    }
+    
+    .text-left {
+        text-align: left;
+        padding-left: 10px;
+    }

@@ -3,7 +3,7 @@ require_once 'convertFromPlans.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@ require_once 'convertFromPlans.php';
     </nav>
 
     <div class="container">
-        <h3 class="center">Simulador de Plano Saúde</h3>
+        <h3 class="titulo center">Simulador de Plano Saúde</h3>
         <div class="row">
             <form class="col s12" action='' method='POST'>
                 <div class=" row">
@@ -63,7 +63,7 @@ require_once 'convertFromPlans.php';
                 
                 for ($i=0; $i < $qt_benef; $i++) {
                     
-                   echo "<div class='input-field col s3'>
+                   echo "<div class='input-field col s4'>
                         <label>Escolha um plano: </label>
                         <select name='plano_escolhido[]' id='plano_escolhido' class='validate' required>
                             <option  disabled selected></option>";
@@ -75,10 +75,10 @@ require_once 'convertFromPlans.php';
                 echo '</div>';                   
                 
                     echo "<div class='input-field col s6'>
-                    <input name='nomes[]' type='text' class='validate' required>
+                    <input name='nomes[]' type='text' class=' text-left validate' required>
                     <label>Nome</label>
                 </div>
-                <div class='input-field col s3'>
+                <div class='input-field col s2'>
                      <input name='idades[]' type='number' min='0' class='validate' required>
                     <label>Idade</label>
                 </div>";
