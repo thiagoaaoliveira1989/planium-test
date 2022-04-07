@@ -19,31 +19,49 @@ require_once 'convertFromPlans.php';
 <body>
 
 
-    <nav>
-        <div class="nav-wrapper black">
-            <a href="index.php" class="brand-logo"><img src="img/logo.png" width="200px" alt=""></a>
+
+
+    <div class="topo">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.php" class="brand-logo center"> <img src="img/logo2.png" width="250px" alt="logo"></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#orcamento">Orçamento</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container2">
+            <h2 class="center">Quando se trata de plano de saúde,<br>nós temos a solução completa.</h2>
+            <h3 class="">Não perca tempo, falando com consultores e esperando horas pelo seu orçamento, aqui você mesmo
+                consegue fazer seu orçamento de forma descomplicada.</h3>
+
+            <a class="waves-effect waves-light btn" href="#orcamento">Simular Orçamento</a>
         </div>
-    </nav>
 
-    <div class="container">
-        <h3 class="titulo center">Simulador de Plano Saúde</h3>
-        <div class="row">
-            <form class="col s12" action='' method='POST'>
-                <div class=" row">
-                            
-                            <div class="center  input-field col s3">
+
+        <!--  <div class='img-efect' src="img/img.png" alt=""></div> -->
+    </div>
+    <div class="container" id="orcamento">
+        <div class="height-full">
+            <h3 class="titulo center">Simulador de Plano Saúde</h3>
+            <div class="row">
+                <form class="col s12" action='' method='POST'>
+                    <div class=" row">
+
+                        <div class="center  input-field col s3">
                             <label for="icon_prefix">Digite a Qt de Beneficiários</label>
-                             <input id="qt_benef" name="qt_benef"  min='0' value='$qt_benef'  type="number" class=" input-center validate" required>
-                            </div><br><br>
+                            <input id="qt_benef" name="qt_benef" min='0' value='$qt_benef' type="number"
+                                class=" input-center validate" required>
+                        </div><br><br>
 
-                            <div class="center input-center input-field col s6">
-                                <input class="waves-effect waves-light btn" name="btn_sub" type="submit" value="Confirme" >
-                            </div>
+                        <div class="center input-center input-field col s6">
+                            <input class="waves-effect waves-light btn" name="btn_sub" type="submit" value="Confirme">
+                        </div>
 
-            </form>
+                </form>
 
 
-            <?php 
+                <?php 
                  /*
                 *caso seja recebido o valor do input qt_benf
                 *faça a condição de repetição abaixo
@@ -92,14 +110,11 @@ require_once 'convertFromPlans.php';
                 
                 ?>
 
+            </div>
+            </form>
         </div>
-
-
-        </form>
     </div>
-
     </div>
-
 
 
 

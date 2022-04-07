@@ -1,46 +1,84 @@
-    select {
-        display: list-item;
-    }
-    
-    .input-field>label {
-        position: relative;
-    }
-    
-    .input-center {
-        display: flex;
-    }
-    
-    input[type="submit"] {
-        color: white;
-    }
-    
-    .container {
-        background-color: rgba(197, 196, 196, 0.6);
-    }
-    
-    .titulo {
-        padding-top: 20px;
-    }
-    
-    .input-field>label {
-        color: black;
-    }
-    
-    th {
-        font-size: 1.1rem;
-    }
-    
-    input {
-        text-align: center;
-    }
-    
-    .text-left {
-        text-align: left;
-        padding-left: 10px;
-    }
-    
-    tr,
-    td,
-    th {
-        padding-left: 7vw;
-    }
+   nav,
+   .nav-wrapper {
+       background-color: rgba(0, 0, 0, .1);
+   }
+   
+   select {
+       display: list-item;
+   }
+   
+   .input-field>label {
+       position: relative;
+   }
+   
+   .input-center {
+       display: flex;
+   }
+   
+   input[type="submit"] {
+       color: white;
+   }
+   
+   .container {
+       background-color: rgba(197, 196, 196, 0.6);
+       height: 100%;
+   }
+   
+   .titulo {
+       padding-top: 40px;
+   }
+   
+   .input-field>label {
+       color: black;
+   }
+   
+   th {
+       font-size: 1.1rem;
+   }
+   
+   input {
+       text-align: center;
+   }
+   
+   .text-left {
+       text-align: left;
+       padding-left: 10px;
+   }
+   
+   tr,
+   td,
+   th {
+       padding-left: 7vw;
+   }
+   
+   .topo {
+       background-image: url('/img/topo-Planium2-1.jpg');
+       background-repeat: no-repeat;
+       background-size: auto;
+       height: 100vh;
+       width: 100%;
+   }
+   
+   .img-efect {
+       background-image: url('/img/img.png');
+       display: flex;
+       background-color: #ffffff07;
+       background-size: auto;
+   }
+   
+   .topo img.center {
+       width: 50%;
+       margin-top: 50px;
+   }
+   
+   .container2 {
+       display: flex;
+       flex-direction: column;
+       margin: auto;
+       width: 70%;
+       align-items: center;
+   }
+   
+   .height-full {
+       height: 100%;
+   }
