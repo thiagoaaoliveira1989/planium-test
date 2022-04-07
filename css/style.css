@@ -110,7 +110,7 @@ th {
     margin-top: 5px;
 }
 
-@media screen and (max-width: 1311px) {
+@media screen and (max-width: 1024px) {
     .container2 h2 {
         font-size: 8vh;
         text-align: center;
@@ -129,13 +129,13 @@ th {
     }
 }
 
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 768px) {
     .container2 h2 {
-        font-size: 7vh;
+        font-size: 8vh;
         text-align: left;
     }
     .container2 h3 {
-        font-size: 5vh;
+        font-size: 6vh;
     }
     .btn-orc {
         margin-top: 50px;
@@ -148,9 +148,9 @@ th {
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 783px) {
     .container2 h2 {
-        font-size: 7vh;
+        font-size: 6.5vh;
         text-align: left;
     }
     .container2 h3 {
@@ -169,11 +169,11 @@ th {
 
 @media screen and (max-width: 540px) {
     .container2 h2 {
-        font-size: 5vh;
+        font-size: 6vh;
         text-align: left;
     }
     .container2 h3 {
-        font-size: 3.5vh;
+        font-size: 4vh;
     }
     .btn-orc {
         margin-top: 50px;
@@ -186,9 +186,9 @@ th {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     .container2 h2 {
-        font-size: 5vh;
+        font-size: 4.5vh;
         text-align: left;
     }
     .container2 h3 {
