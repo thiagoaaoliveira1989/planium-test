@@ -1,84 +1,206 @@
-   nav,
-   .nav-wrapper {
-       background-color: rgba(0, 0, 0, .1);
-   }
-   
-   select {
-       display: list-item;
-   }
-   
-   .input-field>label {
-       position: relative;
-   }
-   
-   .input-center {
-       display: flex;
-   }
-   
-   input[type="submit"] {
-       color: white;
-   }
-   
-   .container {
-       background-color: rgba(197, 196, 196, 0.6);
-       height: 100%;
-   }
-   
-   .titulo {
-       padding-top: 40px;
-   }
-   
-   .input-field>label {
-       color: black;
-   }
-   
-   th {
-       font-size: 1.1rem;
-   }
-   
-   input {
-       text-align: center;
-   }
-   
-   .text-left {
-       text-align: left;
-       padding-left: 10px;
-   }
-   
-   tr,
-   td,
-   th {
-       padding-left: 7vw;
-   }
-   
-   .topo {
-       background-image: url('/img/topo-Planium2-1.jpg');
-       background-repeat: no-repeat;
-       background-size: auto;
-       height: 100vh;
-       width: 100%;
-   }
-   
-   .img-efect {
-       background-image: url('/img/img.png');
-       display: flex;
-       background-color: #ffffff07;
-       background-size: auto;
-   }
-   
-   .topo img.center {
-       width: 50%;
-       margin-top: 50px;
-   }
-   
-   .container2 {
-       display: flex;
-       flex-direction: column;
-       margin: auto;
-       width: 70%;
-       align-items: center;
-   }
-   
-   .height-full {
-       height: 100%;
-   }
+nav,
+.nav-wrapper {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+select {
+    display: list-item;
+}
+
+.input-field>label {
+    position: relative;
+}
+
+.input-center {
+    display: flex;
+}
+
+input[type="submit"] {
+    color: white;
+}
+
+.container {
+    background-color: rgba(197, 196, 196, 0.6);
+    margin-bottom: 50px;
+}
+
+.titulo {
+    padding-top: 40px;
+}
+
+.input-field>label {
+    color: black;
+}
+
+th {
+    font-size: 1.1rem;
+}
+
+input {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+    padding-left: 10px;
+}
+
+tr,
+td,
+th {
+    padding-left: 7vw;
+}
+
+.topo {
+    background-image: url('/img/topo-Planium2-1.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+    width: 100%;
+}
+
+.img-efect {
+    background-image: url('/img/img.png');
+    display: flex;
+    background-color: #ffffff07;
+    background-size: auto;
+}
+
+.topo img.center {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    align-items: center;
+}
+
+.height-full {
+    height: 100%;
+}
+
+.container2 h2 {
+    font-size: 9vh;
+}
+
+.container2 h3 {
+    font-size: 6vh;
+}
+
+.btn-orc {
+    margin-top: 50px;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.page-footer {
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 150px;
+}
+
+.nav-wrapper .left,
+.left-footer .left {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1311px) {
+    .container2 h2 {
+        font-size: 8vh;
+        text-align: center;
+    }
+    .container2 h3 {
+        font-size: 5vh;
+    }
+    .btn-orc {
+        margin-top: 50px;
+        width: 250px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .waves-input-wrapper {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    .container2 h2 {
+        font-size: 7vh;
+        text-align: left;
+    }
+    .container2 h3 {
+        font-size: 5vh;
+    }
+    .btn-orc {
+        margin-top: 50px;
+        width: 250px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .waves-input-wrapper {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .container2 h2 {
+        font-size: 7vh;
+        text-align: left;
+    }
+    .container2 h3 {
+        font-size: 4vh;
+    }
+    .btn-orc {
+        margin-top: 50px;
+        width: 250px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .waves-input-wrapper {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container2 h2 {
+        font-size: 5vh;
+        text-align: left;
+    }
+    .container2 h3 {
+        font-size: 3.5vh;
+    }
+    .btn-orc {
+        margin-top: 50px;
+        width: 250px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .waves-input-wrapper {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container2 h2 {
+        font-size: 5vh;
+        text-align: left;
+    }
+    .container2 h3 {
+        font-size: 3vh;
+    }
+    .btn-orc {
+        margin-top: 50px;
+        width: 250px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .waves-input-wrapper {
+        margin-left: 20px;
+    }
+}

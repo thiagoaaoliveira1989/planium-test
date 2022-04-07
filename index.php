@@ -24,8 +24,8 @@ require_once 'convertFromPlans.php';
     <div class="topo">
         <nav>
             <div class="nav-wrapper">
-                <a href="index.php" class="brand-logo center"> <img src="img/logo2.png" width="250px" alt="logo"></a>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <a href="index.php" class="brand-logo left"> <img src="img/logo2.png" width="250px" alt="logo"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#orcamento">Orçamento</a></li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@ require_once 'convertFromPlans.php';
             <h3 class="">Não perca tempo, falando com consultores e esperando horas pelo seu orçamento, aqui você mesmo
                 consegue fazer seu orçamento de forma descomplicada.</h3>
 
-            <a class="waves-effect waves-light btn" href="#orcamento">Simular Orçamento</a>
+            <a class="waves-effect waves-light btn btn-orc" href="#orcamento">Simular Orçamento</a>
         </div>
 
 
@@ -46,17 +46,21 @@ require_once 'convertFromPlans.php';
             <h3 class="titulo center">Simulador de Plano Saúde</h3>
             <div class="row">
                 <form class="col s12" action='' method='POST'>
-                    <div class=" row">
+                    <div class="container3 col s12">
+                        <div class="row">
 
-                        <div class="center  input-field col s3">
-                            <label for="icon_prefix">Digite a Qt de Beneficiários</label>
-                            <input id="qt_benef" name="qt_benef" min='0' value='$qt_benef' type="number"
-                                class=" input-center validate" required>
-                        </div><br><br>
+                            <div class="center  input-field col s3">
+                                <label for="icon_prefix">Digite a Qt de Beneficiários</label>
+                                <a href="#orcamento"><input id="qt_benef" name="qt_benef" min='0' value='$qt_benef'
+                                        type="number" class=" input-center validate" required></a>
+                            </div><br><br>
 
-                        <div class="center input-center input-field col s6">
-                            <input class="waves-effect waves-light btn" name="btn_sub" type="submit" value="Confirme">
+                            <div class="center input-center input-field col s6">
+                                <input class="waves-effect waves-light btn" name="btn_sub" type="submit"
+                                    value="Confirme">
+                            </div>
                         </div>
+
 
                 </form>
 
@@ -75,14 +79,16 @@ require_once 'convertFromPlans.php';
                 /*
                 *recebendo o valor do input do formulario a cima e enviando nesse novo formulario para simulador_plan.php
                 */
-               echo "<form class='col s12' action='simulador_plan.php' method='POST'>
+               echo "
+               <form class='col s12' action='simulador_plan.php' method='POST'>
                <div class='input-field col s12'>
                    <input name='totalBenef' value='$qt_benef'type='hidden' class='validate'> 
                 </div>";
                 
                 for ($i=0; $i < $qt_benef; $i++) {
                     
-                   echo "<div class='input-field col s4'>
+                   echo "<div class='row'>
+                   <div class='input-field col s4'>
                         <label>Escolha um plano: </label>
                         <select name='plano_escolhido[]' id='plano_escolhido' class='validate' required>
                             <option  disabled selected></option>";
@@ -100,7 +106,7 @@ require_once 'convertFromPlans.php';
                 <div class='input-field col s2'>
                      <input name='idades[]' type='number' min='0' class='validate' required>
                     <label>Idade</label>
-                </div>";
+                </div></div>";
                 }
                echo "<div class='input-field col s12'>
                     <input type='submit' value='Simular' class='right waves-effect waves-light btn'>
@@ -116,7 +122,18 @@ require_once 'convertFromPlans.php';
     </div>
     </div>
 
+    <footer class="page-footer">
+        <div class="center">
+            <a href="index.php" class="brand-logo center"> <img src="img/logo3.png" width="300px" alt="logo"></a>
+        </div>
+        <div class="left-footer">
+            <a class="grey-text text-lighten-4 left"
+                href="https://www.linkedin.com/in/thiago-araujo-de-aguiar-oliveira-78ba12a7/" target="_blank">© 2022
+                Desenvolvido por Thiago Araujo</a>
+        </div>
 
+
+    </footer>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

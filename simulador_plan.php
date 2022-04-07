@@ -2,30 +2,33 @@
 require_once 'convertFromPlans.php';
 ?>
 
-<!DOCTYPE html>
 <html lang="PT-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orçamento - Planium</title>
+    <title>Planium</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
 
 
-    <nav>
-        <div class="nav-wrapper black">
-            <a href="index.php" class="brand-logo"><img src="img/logo.png" width="200px" alt=""></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="index.php">Home</a></li>
-            </ul>
-        </div>
-    </nav>
+
+
+    <div class="topo">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.php" class="brand-logo left"> <img src="img/logo2.png" width="250px" alt="logo"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.php">HOME</a></li>
+                </ul>
+            </div>
+        </nav>
 
     
 <?php
@@ -249,4 +252,21 @@ fclose($file2);
 
 
 ?>
-   
+     <footer class="page-footer">
+        <div class="center">
+            <a href="index.php" class="brand-logo center"> <img src="img/logo3.png" width="300px" alt="logo"></a>
+        </div>
+        <div class="left-footer">
+            <a class="grey-text text-lighten-4 left"
+                href="https://www.linkedin.com/in/thiago-araujo-de-aguiar-oliveira-78ba12a7/" target="_blank">© 2022
+                Desenvolvido por Thiago Araujo</a>
+        </div>
+
+
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
