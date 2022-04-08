@@ -1,1 +1,15 @@
-[{"Plano Escolhido":"reg1","Nome":"Carina","Idade":3}]
+{
+    "error": false,
+    "mensagem": "",
+    "beneficiarios": [{
+            "Plano Escolhido": "reg1",
+            "Nome": "Carina",
+            "Idade": 43
+        },
+        {
+            "Plano Escolhido": "reg4",
+            "Nome": "Thiago",
+            "Idade": 23
+        }
+    ]
+}

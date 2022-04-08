@@ -44,9 +44,14 @@ $nomes= $_POST['nomes'];
 $idades= $_POST['idades'];
 
 
+$data = array();
+$data['error']= false;
+$data['mensagem'] = '';
+
+if($data > 0){
     for($i=0; $i < count($nomes); $i++){
         
-        $data[] = array(
+        $data['beneficiarios'][] = array(
             "Plano Escolhido"=>$plano[$i],
             "Nome"=>$nomes[$i],
             "Idade"=>intval($idades[$i])
@@ -61,6 +66,12 @@ $idades= $_POST['idades'];
     fwrite($file, $json);
     fclose($file);
 
+}else{
+    $data['error']=true;
+    $data['mensagem'] = "Erro ao Inserir dados no Arquivo beneficiarios.json";
+    
+}
+    
 ?>
 <div class="container">
 <h3 class="titulo center">Orçamento</h3>
@@ -74,10 +85,15 @@ $idades= $_POST['idades'];
     
 <?php 
 
+$data2 = array();
+$data2['orcamento_total'] = 0;
+$data2['error']= false;
+$data2['mensagem'] = '';
 
 
+foreach($data['beneficiarios'] as $row){
 
-foreach($data as $row){
+    print_r($row);
     //retornando na tela uma lista com os dados escolhido pelo usuario e mostrando o valor total do plano.
     echo "<tr><td>".$row['Plano Escolhido']."</td>";
     echo "<td>".$row['Nome']."</td>";
@@ -220,7 +236,7 @@ foreach($data as $row){
    $tot_plano = $tot_plano + $valordoplano;
    
 
-    $data2[] =  array(
+   $data2['dados_orcamento'][]=  array(
         "Plano Escolhido"=>$row['Plano Escolhido'],
         "Nome"=>$row['Nome'],
         "Idade"=>$row['Idade'],
@@ -243,7 +259,7 @@ echo "<br><br><table class='striped'>
     *depois de fazer a condiçao a cima e calcular o preço unitario de cada plano e o preço total
     *salvo a prosposta em proposta.json
     */
-$data2[] =  array("Valor Total"=>$tot_plano);
+$data2['orcamento_total']= $tot_plano;
 $arquivo2 = "json/proposta.json";
 $json2 = json_encode($data2);
 $file2 = fopen(__DIR__ . '/' . $arquivo2,'w');
