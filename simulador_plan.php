@@ -92,6 +92,11 @@ $data2['orcamento_total'] = 0;
 $data2['error']= false;
 $data2['mensagem'] = '';
 
+$json_benef = file_get_contents("json/plans.json");
+$data_benef= json_decode($json_benef);
+
+
+if($data_benef[0]->nome > 0){
 
 foreach($data['beneficiarios'] as $row){
     
@@ -233,21 +238,27 @@ foreach($data['beneficiarios'] as $row){
              echo "<td>".$valordoplano.",00 </td></tr>";
              break; 
         }  
-    }                    
-
-   $tot_plano = $tot_plano + $valordoplano;
-   
-
-   $data2['dados_orcamento'][]=  array(
+    }     
+    $tot_plano = $tot_plano + $valordoplano;
+    
+    $data2['dados_orcamento'][]=  array(
         "Plano Escolhido"=>$row['Plano Escolhido'],
         "Nome"=>$row['Nome'],
         "Idade"=>$row['Idade'],
         "Valor do Plano"=>$valordoplano,
     );
+}
+   
+   
+
+ 
 
 
     
    
+}else{
+    $data2['error']= true;
+    $data2['mensagem'] = 'Erro ao Receber o Plano Escolhido';
 }
 
 echo "<br><br><table class='striped'>
