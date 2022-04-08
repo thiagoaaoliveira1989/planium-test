@@ -85,6 +85,8 @@ if($data > 0){
     
 <?php 
 
+
+
 $data2 = array();
 $data2['orcamento_total'] = 0;
 $data2['error']= false;
@@ -92,8 +94,8 @@ $data2['mensagem'] = '';
 
 
 foreach($data['beneficiarios'] as $row){
+    
 
-    print_r($row);
     //retornando na tela uma lista com os dados escolhido pelo usuario e mostrando o valor total do plano.
     echo "<tr><td>".$row['Plano Escolhido']."</td>";
     echo "<td>".$row['Nome']."</td>";
@@ -102,7 +104,7 @@ foreach($data['beneficiarios'] as $row){
     /*
     *verificando o plano escolhido, e o minimo de vidas de correspondente a cada plano, e assim calculando o valor de cada plano.
     */
-    if(($row['Plano Escolhido'] == 'reg1') && ($tot_benef < $data_prices[1]->minimo_vidas)){
+    if(($row['Plano Escolhido'] == $data_plans[0]->nome) && ($tot_benef < $data_prices[1]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:
@@ -119,7 +121,7 @@ foreach($data['beneficiarios'] as $row){
              break; 
         }  
 
-    }elseif(($row['Plano Escolhido'] == 'reg1') && ($tot_benef >= $data_prices[1]->minimo_vidas)){
+    }elseif(($row['Plano Escolhido'] == $data_plans[0]->nome) && ($tot_benef >= $data_prices[1]->minimo_vidas)){
         switch($row['Idade']){
             case $row['Idade']< 18:
              $valordoplano =  $data_prices[1]->faixa1;
@@ -134,7 +136,7 @@ foreach($data['beneficiarios'] as $row){
              echo "<td>".$valordoplano.",00 </td></tr>";
              break; 
         }  
-    }elseif(($row['Plano Escolhido'] == 'reg2') && ($tot_benef >= $data_prices[2]->minimo_vidas)){
+    }elseif(($row['Plano Escolhido'] == $data_plans[1]->nome) && ($tot_benef >= $data_prices[2]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:
@@ -151,7 +153,7 @@ foreach($data['beneficiarios'] as $row){
              break; 
         }  
 
-    }elseif(($row['Plano Escolhido'] == 'reg3') && ($tot_benef >= $data_prices[3]->minimo_vidas)){
+    }elseif(($row['Plano Escolhido'] == $data_plans[2]->nome) && ($tot_benef >= $data_prices[3]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:
@@ -167,7 +169,7 @@ foreach($data['beneficiarios'] as $row){
              echo "<td>".$valordoplano.",00 </td></tr>";
              break; 
         }  
-    }elseif(($row['Plano Escolhido'] == 'reg4') && ($tot_benef >= $data_prices[4]->minimo_vidas)){
+    }elseif(($row['Plano Escolhido'] == $data_plans[3]->nome) && ($tot_benef >= $data_prices[4]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:
@@ -183,7 +185,7 @@ foreach($data['beneficiarios'] as $row){
              echo "<td>".$valordoplano.",00 </td></tr>";
              break; 
         }  
-    }elseif(($row['Plano Escolhido'] == 'reg5') && ($tot_benef >= $data_prices[5]->minimo_vidas)){
+    }elseif(($row['Plano Escolhido'] == $data_plans[4]->nome) && ($tot_benef >= $data_prices[5]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:
@@ -199,7 +201,7 @@ foreach($data['beneficiarios'] as $row){
              echo "<td>".$valordoplano.",00 </td></tr>";
              break; 
         }  
-    }elseif(($row['Plano Escolhido'] == 'reg6') && ($tot_benef == $data_prices[6]->minimo_vidas)){
+    }elseif(($row['Plano Escolhido'] == $data_plans[5]->nome) && ($tot_benef == $data_prices[6]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:
@@ -215,7 +217,7 @@ foreach($data['beneficiarios'] as $row){
              echo "<td>".$valordoplano.",00 </td></tr>";
              break; 
         }  
-    }elseif(($row['Plano Escolhido'] == 'reg6') && ($tot_benef >= $data_prices[7]->minimo_vidas)){
+    }elseif(($row['Plano Escolhido'] == $data_plans[5]->nome) && ($tot_benef >= $data_prices[7]->minimo_vidas)){
         
         switch($row['Idade']){
             case $row['Idade']< 18:

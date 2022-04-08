@@ -1,18 +1,11 @@
 {
-    "orcamento_total": 65,
+    "orcamento_total": 60,
     "error": false,
     "mensagem": "",
     "dados_orcamento": [{
-            "Plano Escolhido": "reg1",
-            "Nome": "Carina",
-            "Idade": 43,
-            "Valor do Plano": 15
-        },
-        {
-            "Plano Escolhido": "reg4",
-            "Nome": "Thiago",
-            "Idade": 23,
-            "Valor do Plano": 50
-        }
-    ]
+        "Plano Escolhido": "Bitix Customer Plano 4",
+        "Nome": "Carina",
+        "Idade": 50,
+        "Valor do Plano": 60
+    }]
 }

@@ -93,7 +93,7 @@ require_once 'convertFromPlans.php';
                         <select name='plano_escolhido[]' id='plano_escolhido' class='validate' required>
                             <option  disabled selected></option>";
                              foreach($data_plans as $row_plans){   
-                                 echo "<option value='$row_plans->registro' >$row_plans->nome</option>";
+                                 echo "<option value='$row_plans->nome' >$row_plans->nome</option>";
                             }
                                 
                     echo '</select>';
